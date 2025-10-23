@@ -42,19 +42,12 @@ The working of a boost converter can be divided into **two operating modes**:
 
 ## ⚙️ Output Voltage Relation
 The output voltage of a boost converter is given by:
-\[
-V_{OUT} = V_{IN} + V_L
-\]
-where  
-- \( V_{OUT} \) = Output voltage  
-- \( V_{IN} \) = Input voltage  
-- \( V_L \) = Inductor voltage  
-Thus, \( V_{OUT} > V_{IN} \), which means the voltage is **boosted**.
+\[V_{OUT} = V_{IN} + V_L\]
 
 ## Role of 555 Timer IC
 The **555 Timer IC** operates in **Astable Mode** to generate a continuous **square wave** that controls the **MOSFET switching**.
 - **HIGH Pulse:** MOSFET turns **ON** → Mode 1 (Energy Storage)  
-- **LOW Pulse:** MOSFET turns **OFF** → Mode 2 (Energy Release)  
+- **LOW Pulse:** MOSFET turns **OFF** → Mode 2 (Energy Release)
 The **frequency** and **duty cycle** of this waveform depend on the values of **resistors (R1, R2)** and **capacitors (C1, C2)** in the timer circuit.
 
 ## Components Used
