@@ -17,16 +17,19 @@ The working of a boost converter can be divided into **two operating modes**:
 - The **input current (VIN)** flows through the **inductor (L1)** and the **MOSFET**, storing energy in the inductor’s magnetic field.  
 - The **diode (D1)** is **reverse-biased**, so no current flows to the output.  
 - The **load** continues to receive power from the **capacitor (C1)**.
+  
 **Key Points**
 - Inductor **stores energy**.  
 - Diode **OFF (reverse-biased)**.  
 - MOSFET **ON**.  
-- Current path: `VIN → L1 → M1 → GND`.  
+- Current path: `VIN → L1 → M1 → GND`.
+  
 ### Mode 2 – Switch OFF (Energy Release Phase)
 - The **MOSFET** turns **OFF** when the 555 Timer sends a **LOW** signal.  
 - The **inductor (L1)** releases its stored energy to maintain current flow.  
 - The **induced voltage (VL)** adds to the **input voltage (VIN)**.  
 - The **diode (D1)** becomes **forward-biased**, allowing current to charge the **capacitor (C1)** and supply the **load**.
+  
 **Key Points**
 - Inductor **releases stored energy**.  
 - Diode **ON (forward-biased)**.  
