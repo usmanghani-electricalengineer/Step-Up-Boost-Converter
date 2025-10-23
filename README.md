@@ -34,7 +34,7 @@ The working of a boost converter can be divided into **two operating modes**:
 - Inductor **releases stored energy**.  
 - Diode **ON (forward-biased)**.  
 - MOSFET **OFF**.  
-- Current path: `L1 → D1 → C1 → Load → GND`.
+- Current path: `L1 → D1 → C1 → Load`.
 
 ## Role of 555 Timer IC
 The **555 Timer IC** operates in **Astable Mode** to generate a continuous **square wave** that controls the **MOSFET switching**.
