@@ -1,11 +1,5 @@
 # Step Up Boost Converter ( DC to DC )
-A **Boost Converter** is a type of **DC-to-DC converter** that steps up (increases) the input voltage to a higher output voltage.  
-In this project, a **12V DC input** is converted into an **18V DC output**.
-
-## What is a Boost Converter?
-A **boost converter** works on the principle of **energy storage in an inductor** and its controlled release to achieve voltage conversion.
-- It takes a **DC input voltage** and outputs a **higher DC voltage**.  
-- Because the output voltage is greater than the input voltage, it is also known as a **Step-Up Converter**.
+This project involves the design and implementation of a Boost Converter, a DC-to-DC step-up circuit that increases the input voltage level. The system efficiently converts a 12V DC input into an 18V DC output, demonstrating the principle of voltage boosting using inductor energy storage and controlled switching.
 
 ## Power Supply Preparation
 If a DC source is not available, we first convert AC to DC before feeding it to the boost converter.
@@ -27,8 +21,7 @@ The working of a boost converter can be divided into **two operating modes**:
 - Inductor **stores energy**.  
 - Diode **OFF (reverse-biased)**.  
 - MOSFET **ON**.  
-- Current path: `VIN → L1 → M1 → GND`.
-  
+- Current path: `VIN → L1 → M1 → GND`.  
 ### Mode 2 – Switch OFF (Energy Release Phase)
 - The **MOSFET** turns **OFF** when the 555 Timer sends a **LOW** signal.  
 - The **inductor (L1)** releases its stored energy to maintain current flow.  
@@ -39,10 +32,6 @@ The working of a boost converter can be divided into **two operating modes**:
 - Diode **ON (forward-biased)**.  
 - MOSFET **OFF**.  
 - Current path: `L1 → D1 → C1 → Load → GND`.
-
-## ⚙️ Output Voltage Relation
-The output voltage of a boost converter is given by:
-\[V_{OUT} = V_{IN} + V_L\]
 
 ## Role of 555 Timer IC
 The **555 Timer IC** operates in **Astable Mode** to generate a continuous **square wave** that controls the **MOSFET switching**.
