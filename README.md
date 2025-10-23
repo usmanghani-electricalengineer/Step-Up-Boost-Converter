@@ -40,6 +40,7 @@ The working of a boost converter can be divided into **two operating modes**:
 The **555 Timer IC** operates in **Astable Mode** to generate a continuous **square wave** that controls the **MOSFET switching**.
 - **HIGH Pulse:** MOSFET turns **ON** → Mode 1 (Energy Storage)  
 - **LOW Pulse:** MOSFET turns **OFF** → Mode 2 (Energy Release)
+  
 The **frequency** and **duty cycle** of this waveform depend on the values of **resistors (R1, R2)** and **capacitors (C1, C2)** in the timer circuit.
 
 ## Components Used
